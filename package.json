@@ -1,0 +1,48 @@
+{
+  "name": "react-native-redux-starter-kit",
+  "version": "1.2.0",
+  "description": "Get started with React Native and Redux.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daviddang91/react-native-redux-starter-kit"
+  },
+  "author": "David Dang <quyettien.ictu@gmail.com> (https://github.com/daviddang91)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daviddang91/react-native-redux-starter-kit/issues"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "native-base": "2.3.3",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.4",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-form": "^6.8.0",
+    "redux-persist": "^4.8.2",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.12"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react-native": "^3.1.0",
+    "jest": "21.2.1",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
