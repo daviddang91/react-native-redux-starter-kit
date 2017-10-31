@@ -2,6 +2,21 @@
 
 A starter boilerplate for a mobile app using React Native and Redux.
 
+[![Dependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
+[![devDependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
+
+## Demo
+
+iOS | Android
+ :--:| :-----:
+ ![ios-demo](./img/iOS.gif) | ![android-demo](./img/Android.gif)
+
+
+[NativeBase](http://nativebase.io/) is a free and open source framework that enables developers to build high-quality apps using [React Native](https://facebook.github.io/react-native/) for iOS and Android with a fusion of ES6. NativeBase builds a layer on top of React Native that provides you with basic set of components for mobile application development. This helps you to build world-class application experiences on native platforms.
+
+NativeBase without a doubt fits in well with mobile applications which cut downs one huge part of your app - The Front end.
+The applications stack of components is built using native UI components, so there are no compromises with the user experience.
+
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
