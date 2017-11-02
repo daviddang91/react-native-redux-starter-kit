@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import App from './containers/App';
 import configureStore from './stores/configureStore';
 
-function Setup():React.Component {
+const Setup = () => {
   class Root extends Component {
     constructor() {
         super();

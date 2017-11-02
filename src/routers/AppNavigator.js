@@ -5,11 +5,10 @@ import { Root, StyleProvider } from "native-base";
 import { StackNavigator } from "react-navigation";
 
 import getTheme from '../../native-base-theme/components';
-import material from '../themes/base-theme';
+import material from '../../native-base-theme/variables/material';
 
 import Drawer from "./Drawer";
 
-import SideBar from "../components/sidebar";
 import BasicFooter from "../components/home/basicFooter";
 import IconFooter from "../components/home/iconFooter";
 import IconText from "../components/home/iconText";
