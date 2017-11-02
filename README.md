@@ -34,6 +34,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 ## Libraries
 - [NativeBase](https://nativebase.io/) `2.3.3`
+- [Navigation for React Native](https://reactnavigation.org/) `^1.0.0-beta.11`
 
 ## Get Started
 
