@@ -2,6 +2,15 @@
 
 A starter boilerplate for a mobile app using React Native and Redux.
 
+[![Dependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
+[![devDependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
+
+## Demo
+
+iOS | Android
+ :--:| :-----:
+ ![ios-demo](./img/iOS.gif) | ![android-demo](./img/Android.gif)
+
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
