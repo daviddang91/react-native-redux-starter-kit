@@ -1,45 +1,23 @@
 import React, { Component } from "react";
+import { Image, View, StatusBar, Linking } from "react-native";
 
-import {
-  Container,
-  Header,
-  Title,
-  Content,
-  Button,
-  Icon,
-  Text,
-  Left,
-  Body,
-  Right,
-  List,
-  ListItem
-} from "native-base";
+import { Container, Button, H3, Text, Header, Title, Body, Left, Right, Icon } from "native-base";
 
 import styles from "./styles";
 
-const datas = [
-  {
-    route: "BasicFooter",
-    text: "Basic Footer"
-  },
-  {
-    route: "IconFooter",
-    text: "Icon Footer"
-  },
-  {
-    route: "IconText",
-    text: "Icon & Text Footer"
-  },
-  {
-    route: "BadgeFooter",
-    text: "With Badge"
-  }
-];
+const launchscreenBg = require("../../../img/launchscreen-bg.png");
+const launchscreenLogo = require("../../../img/logo-kitchen-sink.png");
 
-class NHFooter extends Component {
+class Home extends Component {
+
+  openHomePage = () => {
+    let url = "https://nativebase.io/";
+    Linking.openURL(url).catch(err => console.error('An error occurred', err));
+  }
+
   render() {
     return (
-      <Container style={styles.container}>
+      <Container>
         <Header>
           <Left>
             <Button
@@ -50,29 +28,38 @@ class NHFooter extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Footer</Title>
+          <Title>NativeBase</Title>
           </Body>
           <Right />
         </Header>
-
-        <Content>
-          <List
-            dataArray={datas}
-            renderRow={data =>
-              <ListItem
-                button
-                onPress={() => this.props.navigation.navigate(data.route)}
-              >
-                <Text>{data.text}</Text>
-                <Right>
-                  <Icon name="arrow-forward" style={{ color: "#999" }} />
-                </Right>
-              </ListItem>}
-          />
-        </Content>
+        <Image source={launchscreenBg} style={styles.imageContainer}>
+          <View style={styles.logoContainer}>
+            <Image source={launchscreenLogo} style={styles.logo} />
+          </View>
+          <View
+            style={{
+              alignItems: "center",
+              marginBottom: 50,
+              backgroundColor: "transparent",
+            }}
+          >
+            <H3 style={styles.text}>App to showcase</H3>
+            <View style={{ marginTop: 8 }} />
+            <H3 style={styles.text}>NativeBase components</H3>
+            <View style={{ marginTop: 8 }} />
+          </View>
+          <View style={{ marginBottom: 80 }}>
+            <Button
+              style={{ backgroundColor: "#6FAF98", alignSelf: "center" }}
+              onPress={() => this.openHomePage()}
+            >
+              <Text>Home Page</Text>
+            </Button>
+          </View>
+        </Image>
       </Container>
     );
   }
 }
 
-export default NHFooter;
+export default Home;

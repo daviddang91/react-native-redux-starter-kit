@@ -9,19 +9,9 @@ import material from '../../native-base-theme/variables/material';
 
 import Drawer from "./Drawer";
 
-import BasicFooter from "../components/home/basicFooter";
-import IconFooter from "../components/home/iconFooter";
-import IconText from "../components/home/iconText";
-import BadgeFooter from "../components/home/badgeFooter";
-
 const AppNavigator = StackNavigator(
     {
         Drawer: { screen: Drawer },
-
-        BasicFooter: {screen: BasicFooter},
-        IconFooter: {screen: IconFooter},
-        IconText: {screen: IconText},
-        BadgeFooter: {screen: BadgeFooter},
     },
     {
         initialRouteName: "Drawer",

@@ -20,10 +20,12 @@
     "native-base": "2.3.3",
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.4",
+    "react-native-modalbox": "^1.4.2",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.5",
     "redux": "^3.7.2",
     "redux-form": "^6.8.0",
+    "redux-modal": "^1.6.0",
     "redux-persist": "^4.8.2",
     "redux-thunk": "^2.2.0",
     "remote-redux-devtools": "^0.5.12"
