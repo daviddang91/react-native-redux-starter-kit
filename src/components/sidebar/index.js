@@ -31,6 +31,13 @@ const datas = [
 		icon: "phone-portrait",
 		bg: "#C5F442",
 	},
+  {
+    name: "ModalBox",
+    route: "ModalBox",
+    icon: "phone-portrait",
+    bg: "#00BFFF",
+    types: 5
+  },
 ];
 
 class SideBar extends Component {
