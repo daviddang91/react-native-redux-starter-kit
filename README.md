@@ -3,7 +3,7 @@
 A starter boilerplate for a mobile app using React Native and Redux.
 
 [![Dependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
-[![devDependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit)
+[![devDependency Status](https://david-dm.org/daviddang91/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/daviddang91/react-native-redux-starter-kit#info=devDependencies)
 
 ## Demo
 
