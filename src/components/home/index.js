@@ -32,7 +32,8 @@ class Home extends Component {
           </Body>
           <Right />
         </Header>
-        <Image source={launchscreenBg} style={styles.imageContainer}>
+        <View style={styles.content}>
+          <Image source={launchscreenBg} style={styles.imageContainer} />
           <View style={styles.logoContainer}>
             <Image source={launchscreenLogo} style={styles.logo} />
           </View>
@@ -56,7 +57,7 @@ class Home extends Component {
               <Text>Home Page</Text>
             </Button>
           </View>
-        </Image>
+        </View>
       </Container>
     );
   }
