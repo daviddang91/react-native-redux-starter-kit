@@ -52,16 +52,17 @@ class SideBar extends Component {
 	render() {
 		return (
 			<Container>
-				<Content bounces={false} style={{ flex: 1, backgroundColor: "#fff", top: -1 }}>
-					<Image source={drawerCover} style={styles.drawerCover}>
-						<Image square style={styles.drawerImage} source={drawerImage} />
-					</Image>
+				<Content bounces={false} style={styles.container}>
+					<View style={styles.drawerCover}>
+            <Image source={drawerCover} style={styles.backgroundCover} />
+            <Image square style={styles.drawerImage} source={drawerImage} />
+          </View>
 					<List
 						dataArray={datas}
 						renderRow={data =>
 							<ListItem button noBorder onPress={() => this.props.navigation.navigate(data.route)}>
 								<Left>
-									<Icon active name={data.icon} style={{ color: "#777", fontSize: 26, width: 30 }} />
+									<Icon active name={data.icon} style={styles.icon} />
 									<Text style={styles.text}>
 										{data.name}
 									</Text>

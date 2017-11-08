@@ -6,11 +6,13 @@ import { persistStore } from 'redux-persist';
 import reducer from '../reducers';
 import promise from './promise';
 
+const App = require('../../package.json');
+
 export default function configureStore(onCompletion:()=>void):any {
   const enhancer = compose(
     applyMiddleware(thunk, promise),
     devTools({
-      name: 'app', realtime: true,
+      name: App.name, realtime: true,
     }),
   );
 
