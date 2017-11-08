@@ -24,7 +24,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 ## Stack
 - [React JS](https://reactjs.org/) is a JavaScript library
-- [React Native](https://facebook.github.io/react-native/) `0.46.4` for building native apps using react
+- [React Native](https://facebook.github.io/react-native/) `0.50.0` for building native apps using react
 - [Redux](http://rackt.github.io/redux/index.html) `3.7.x` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [NativeBase](https://nativebase.io/) `2.3.3` a UI components for React Native
@@ -33,7 +33,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 
 ## Libraries
-- [NativeBase](https://nativebase.io/) `2.3.3`
+- [NativeBase](https://nativebase.io/) `^2.3.3`
 - [Navigation for React Native](https://reactnavigation.org/) `^1.0.0-beta.11`
 - [Redux Modal](https://github.com/yesmeck/redux-modal) `^1.6.0`
 
