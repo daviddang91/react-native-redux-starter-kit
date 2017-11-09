@@ -94,3 +94,43 @@ This sets up Atom to properly lint ES6+Babel+JSX using Airbnb's .eslintrc as a s
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
+
+## Rename Project
+Rename react-native app with just one command
+
+![react-native-rename](https://cloud.githubusercontent.com/assets/5106887/24444940/cbcb0a58-149a-11e7-9714-2c7bf5254b0d.gif)
+
+> This package assumes that you created your react-native project using `react-native init`.
+
+#### Installation
+```
+yarn global add react-native-rename
+or
+npm install react-native-rename -g
+```
+
+Switch to new branch first
+>better to have back-up
+
+```
+git checkout -b rename-app
+```
+
+#### Usage
+```
+react-native-rename <newName>
+```
+
+> With custom Bundle Identifier (Android)
+```
+react-native-rename <newName> -b <bundleIdentifier>
+```
+
+#### Example
+```
+react-native-rename "Travel App"
+```
+> With custom Bundle Identifier
+```
+react-native-rename "Travel App" -b com.junedomingo.travelapp
+```
