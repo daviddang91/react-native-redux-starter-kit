@@ -1,6 +1,5 @@
-
-import type { Action } from '../actions/types';
-import { OPEN_DRAWER, CLOSE_DRAWER } from '../actions/drawer';
+import type { Action } from "../constants/action-types";
+import  { OPEN_DRAWER, CLOSE_DRAWER } from "../constants/action-types";
 
 export type State = {
     drawerState: string,
@@ -8,7 +7,7 @@ export type State = {
 }
 
 const initialState = {
-  drawerState: 'closed',
+  drawerState: "closed",
   drawerDisabled: true,
 };
 
@@ -16,14 +15,14 @@ export default function (state:State = initialState, action:Action): State {
   if (action.type === OPEN_DRAWER) {
     return {
       ...state,
-      drawerState: 'opened',
+      drawerState: "opened",
     };
   }
 
   if (action.type === CLOSE_DRAWER) {
     return {
       ...state,
-      drawerState: 'closed',
+      drawerState: "closed",
     };
   }
 

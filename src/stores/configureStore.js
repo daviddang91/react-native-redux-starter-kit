@@ -1,23 +1,29 @@
-import { AsyncStorage } from 'react-native';
-import devTools from 'remote-redux-devtools';
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import { persistStore } from 'redux-persist';
-import reducer from '../reducers';
-import promise from './promise';
+import { createStore, applyMiddleware, compose } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { persistStore, persistReducer } from "redux-persist";
+import { multiClientMiddleware } from "redux-axios-middleware";
+import { AsyncStorage } from "react-native";
+import thunkMiddleware from "redux-thunk";
+import { name as appName } from "../../app.json";
+import clients from "./clients";
+import rootReducer from "../reducers";
 
-const App = require('../../package.json');
-
-export default function configureStore(onCompletion:()=>void):any {
-  const enhancer = compose(
-    applyMiddleware(thunk, promise),
-    devTools({
-      name: App.name, realtime: true,
-    }),
-  );
-
-  const store = createStore(reducer, enhancer);
-  persistStore(store, { storage: AsyncStorage }, onCompletion);
-
-  return store;
-}
+const persistConfig = {
+  key: "root",
+  blacklist: [],
+  whitelist: ["auth", "env"],
+  keyPrefix: appName,
+  storage: AsyncStorage
+};
+const middlewares = [
+  thunkMiddleware,
+  multiClientMiddleware(clients),
+];
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+export default () => {
+  let store = createStore(persistedReducer, composeWithDevTools(
+    applyMiddleware(...middlewares),
+  ));
+  let persistor = persistStore(store);
+  return { store, persistor };
+};

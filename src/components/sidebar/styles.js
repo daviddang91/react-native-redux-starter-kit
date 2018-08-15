@@ -1,64 +1,39 @@
-import { StyleSheet, Platform, Dimensions } from "react-native";
-
-const deviceHeight = Dimensions.get("window").height;
-const deviceWidth = Dimensions.get("window").width;
-
 export default {
   container: {
     flex: 1,
-    backgroundColor: "#fff"
-  },
-  sidebar: {
-    flex: 1,
-    backgroundColor: "#fff"
-  },
-  backgroundCover: {
-    position: 'absolute'
+    backgroundColor: "#F2F2F2",
   },
   drawerCover: {
-    height: deviceHeight / 3.5,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    backgroundColor: "#fff"
-  },
-  drawerImage: {
-    width: 210,
-    height: 75,
-  },
-  icon: {
-    color: "#777",
-    fontSize: 26,
-    width: 30
-  },
-  listItemContainer: {
+    backgroundColor: "#fff",
+    height: 104,
     flexDirection: "row",
-    justifyContent: "flex-start",
-    alignItems: "center"
+    alignItems: "center",
   },
-  iconContainer: {
-    width: 37,
-    height: 37,
-    borderRadius: 18,
-    marginRight: 12,
-    paddingTop: Platform.OS === "android" ? 7 : 5
+  avatar: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    borderWidth: 1,
+    borderColor: "#64C8D0",
+    marginLeft: 16
   },
-  sidebarIcon: {
-    fontSize: 21,
-    color: "#fff",
-    lineHeight: Platform.OS === "android" ? 21 : 25,
-    backgroundColor: "transparent",
-    alignSelf: "center"
+  organizerName: {
+    marginLeft: 16,
+    fontSize: 17,
+    fontWeight: "bold",
+    marginRight: 16,
+    flex: 1
   },
-  text: {
-    fontWeight: Platform.OS === "ios" ? "500" : "400",
-    fontSize: 16,
-    marginLeft: 20
+  menuItem: {
+    height: 70
   },
-  badgeText: {
-    fontSize: Platform.OS === "ios" ? 13 : 11,
-    fontWeight: "400",
-    textAlign: "center",
-    marginTop: Platform.OS === "android" ? -3 : undefined
+  menuText: {
+    marginLeft: 16,
+    fontSize: 17
+  },
+  footer: {
+    marginLeft: 16,
+    flexDirection: "row",
+    height: 70
   }
 };
