@@ -8,19 +8,19 @@ class SidebarContainer extends Component {
     super(props);
     this.data = [
       {
-        name: "Scan",
-        route: "Scan",
-        icon: require("../../../assets/icon/digital.png")
+        name: "Home",
+        route: "Home",
+        icon: "home"
       },
       {
-        name: "History",
-        route: "History",
-        icon: require("../../../assets/icon/counterclockwiseRotation.png")
+        name: "Modal",
+        route: "Modal",
+        icon: "albums"
       },
       {
         name: "Logout",
         route: "Logout",
-        icon: require("../../../assets/icon/logout.png")
+        icon: "log-out"
       }
     ];
   }
@@ -38,21 +38,16 @@ class SidebarContainer extends Component {
     return (
       <Sidebar
         data={this.data}
-        account={this.props.auth.data.account}
         onPress={(data) => this.navigator(data)}/>
     );
   }
 }
-
-const mapStateToProps = state => ({
-  auth: state.auth
-});
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(userRequestLogout())
 });
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(SidebarContainer);

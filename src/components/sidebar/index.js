@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Image, TouchableOpacity } from "react-native";
-import { Content, Text, List, ListItem, Container, View } from "native-base";
+import { Content, Text, List, ListItem, Container, View, Icon } from "native-base";
 import _ from "lodash";
 import styles from "./styles";
 
@@ -9,12 +9,11 @@ const avatarImage = require("../../../assets/avatar.png");
 class SideBar extends Component {
   render() {
     let logoutMenu = _.find(this.props.data, { route: "Logout" });
-    let { name, profileImageUrl } = this.props.account;
     return (
       <Container style={styles.container}>
         <View style={styles.drawerCover}>
-          <Image source={profileImageUrl ? {uri: profileImageUrl} : avatarImage} style={styles.avatar}/>
-          <Text style={styles.organizerName}>{name}</Text>
+          <Image source={avatarImage} style={styles.avatar}/>
+          <Text style={styles.organizerName}>Demo Account</Text>
         </View>
         <Content bounces={false}>
           <List
@@ -24,7 +23,11 @@ class SideBar extends Component {
                 return null;
               } else {
                 return <ListItem style={styles.menuItem} onPress={() => this.props.onPress(data)}>
-                  <Image source={data.icon}/>
+                  <Icon
+                    active
+                    name={data.icon}
+                    style={{ color: "#777", fontSize: 26, width: 30 }}
+                  />
                   <Text style={styles.menuText}>{data.name}</Text>
                 </ListItem>;
               }
@@ -32,7 +35,11 @@ class SideBar extends Component {
           />
         </Content>
         <TouchableOpacity style={styles.footer} onPress={() => this.props.onPress(logoutMenu)}>
-          <Image source={logoutMenu.icon}/>
+          <Icon
+            active
+            name={logoutMenu.icon}
+            style={{ color: "#777", fontSize: 26, width: 30 }}
+          />
           <Text style={styles.menuText}>{logoutMenu.name}</Text>
         </TouchableOpacity>
       </Container>
