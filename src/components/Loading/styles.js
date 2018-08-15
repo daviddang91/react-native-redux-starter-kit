@@ -6,7 +6,7 @@ export default {
     marginTop: 104,
     alignSelf: "center",
     width: 238,
-    height: 54
+    height: 49
   },
   textLogo: {
     marginTop: 18,

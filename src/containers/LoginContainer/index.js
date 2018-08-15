@@ -5,7 +5,7 @@ import { Item, Input, Toast, Form } from "native-base";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 import Login from "../../components/Login";
-import { userRequestLogin } from "../../actions";
+import { userLoginSuccess, userLoginFail } from "../../actions";
 import { emailFormat, required, alphaNumeric } from "./validators";
 import styles from  "./styles";
 
@@ -23,7 +23,7 @@ class LoginForm extends Component {
   componentWillReceiveProps(nextProps, nextState){
     if (this.props.auth.isFailed !== nextProps.auth.isFailed){
       if (nextProps.auth.isFailed && !nextProps.auth.isAuthenticating){
-        let message = nextProps.auth.error.errorMessage;
+        let message = nextProps.auth.error;
         setTimeout(() => {
           Alert.alert("",message);
         }, 100);
@@ -57,7 +57,11 @@ class LoginForm extends Component {
   login() {
     if (this.props.valid) {
       let { email, password } = this.props.loginForm.values;
-      this.props.login({email, password});
+      if (email === "demo@gmail.com"){
+        this.props.loginSuccess({email, password});
+      } else {
+        this.props.loginFail({email, password});
+      }
     } else {
       Toast.show({
         text: "Enter Valid Username & password!",
@@ -122,7 +126,11 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  login: ({ email, password }) => dispatch(userRequestLogin({
+  loginSuccess: ({ email, password }) => dispatch(userLoginSuccess({
+    email,
+    password,
+  })),
+  loginFail: ({ email, password }) => dispatch(userLoginFail({
     email,
     password,
   })),

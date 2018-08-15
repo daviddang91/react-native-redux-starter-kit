@@ -1,5 +1,6 @@
 // DEBUG=true is development mode
-export const DEVELOP = true;
+export const AUTH_URL = "https://private-ba76b-reactnativereduxstarterkit.apiary-mock.com";
+
 export const LIST_BUNDLE = "https://support.manadrdev.com/docker/manadr-bundles";
 
 // CME

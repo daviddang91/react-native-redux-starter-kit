@@ -3,7 +3,6 @@ import * as ACTION_TYPES from "../constants/action-types";
 const initialState = {
   token: undefined,
   isAuthenticating: false,
-  data: undefined,
   error: undefined,
   isFailed: false
 };
@@ -19,21 +18,16 @@ export default (state = initialState, action) => {
         isFailed: false
       };
     case ACTION_TYPES.USER_LOGIN_SUCCESS:
+      console.log(payload);
       return {
-        data: payload.data,
-        token: payload.data.jwt,
+        token: payload.data.token,
         isAuthenticating: false,
         isFailed: false
       };
     case ACTION_TYPES.USER_LOGIN_FAILED:
-      let newError = {
-        errorMessage: error.data
-      };
-      if ("response" in error){
-        newError = error.response.data;
-      }
+      console.log(action);
       return {
-        error: newError,
+        error: error.response.data.message,
         isAuthenticating: false,
         isFailed: true
       };
