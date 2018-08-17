@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -40,7 +39,6 @@
 		70673CBF382D452AA83FF9D9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 258FF4B63D654B48B101D796 /* Octicons.ttf */; };
 		79B27EE97A66472C8CA81457 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD2C4A46B37A4296AA0993E4 /* Entypo.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		89EA614ADC354C11B24825B8 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37932CCFBB14B53AE995EBB /* libRNCamera.a */; };
 		A68793DF0B8442ECB1CF86DD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D539E92761554E29A51DE296 /* Foundation.ttf */; };
 		ACE034D08A334D88918836A8 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AB004FEC83439B96E66737 /* Feather.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -294,13 +292,6 @@
 			remoteGlobalIDString = 9D23B34F1C767B80008B4819;
 			remoteInfo = ReactNativePermissions;
 		};
-		5008D1002118028300645E4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F553F1C25E3F45329FBF10A1 /* RNCamera.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
-			remoteInfo = RNCamera;
-		};
 		5008D1062118028300645E4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B652C942E2984D468F9A0379 /* RNVectorIcons.xcodeproj */;
@@ -402,13 +393,11 @@
 		B652C942E2984D468F9A0379 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		C32BE17ED12A48FEB4CEAFF3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		D06AFC525E65477DB8AEF0AE /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		D37932CCFBB14B53AE995EBB /* libRNCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCamera.a; sourceTree = "<group>"; };
 		D539E92761554E29A51DE296 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D54E2CCBACA244AEB9C8EA0E /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		D693C1E14FFF4FA4BB2DD559 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		DA06A414E9BF44A7942826F1 /* ReactNativePermissions.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativePermissions.xcodeproj; path = "../node_modules/react-native-permissions/ios/ReactNativePermissions.xcodeproj"; sourceTree = "<group>"; };
 		DD2C4A46B37A4296AA0993E4 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		F553F1C25E3F45329FBF10A1 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,7 +427,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				CD1698B703824A4E90355B9D /* libRNVectorIcons.a in Frameworks */,
-				89EA614ADC354C11B24825B8 /* libRNCamera.a in Frameworks */,
 				B949CBEF5B714748A6EDDCC5 /* libReactNativePermissions.a in Frameworks */,
 				377C9D449C5A4CA8828A37FC /* libSplashScreen.a in Frameworks */,
 			);
@@ -590,14 +578,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5008D0F82118028300645E4E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5008D1012118028300645E4E /* libRNCamera.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5008D0FA2118028300645E4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -648,7 +628,6 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				DA06A414E9BF44A7942826F1 /* ReactNativePermissions.xcodeproj */,
-				F553F1C25E3F45329FBF10A1 /* RNCamera.xcodeproj */,
 				B652C942E2984D468F9A0379 /* RNVectorIcons.xcodeproj */,
 				3E034EE8AA0B4E86983EF439 /* SplashScreen.xcodeproj */,
 			);
@@ -850,10 +829,6 @@
 				{
 					ProductGroup = 5008D0FA2118028300645E4E /* Products */;
 					ProjectRef = DA06A414E9BF44A7942826F1 /* ReactNativePermissions.xcodeproj */;
-				},
-				{
-					ProductGroup = 5008D0F82118028300645E4E /* Products */;
-					ProjectRef = F553F1C25E3F45329FBF10A1 /* RNCamera.xcodeproj */;
 				},
 				{
 					ProductGroup = 5008D0F42118028300645E4E /* Products */;
@@ -1104,13 +1079,6 @@
 			remoteRef = 5008D0FD2118028300645E4E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5008D1012118028300645E4E /* libRNCamera.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNCamera.a;
-			remoteRef = 5008D1002118028300645E4E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5008D1072118028300645E4E /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1275,7 +1243,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
@@ -1284,7 +1251,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1304,7 +1270,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
@@ -1313,7 +1278,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1334,7 +1298,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
@@ -1360,7 +1323,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
