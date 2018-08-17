@@ -7,9 +7,7 @@ A starter boilerplate for a mobile app using React Native and Redux.
 
 ## Demo
 
-iOS | Android
- :--:| :-----:
- ![ios-demo](./img/iOS.gif) | ![android-demo](./img/Android.gif)
+![demo](./images/introduce.gif)
 
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
@@ -24,18 +22,20 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 ## Stack
 - [React JS](https://reactjs.org/) is a JavaScript library
-- [React Native](https://facebook.github.io/react-native/) `0.50.0` for building native apps using react
-- [Redux](http://rackt.github.io/redux/index.html) `3.7.x` a predictable state container for Javascript apps
-- [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
-- [NativeBase](https://nativebase.io/) `2.3.3` a UI components for React Native
+- [React Native](https://facebook.github.io/react-native/) `0.56.0` for building native apps using react
+- [Redux](https://redux.js.org) `4.0.0` a predictable state container for Javascript apps
+- [Babel](http://babeljs.io/) `7.2.3` for ES6+ support
+- [NativeBase](https://nativebase.io/) `2.7.2` a UI components for React Native
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [Navigation for React Native](https://reactnavigation.org/) a router based on new React Native Navigation API
 
 
 ## Libraries
-- [NativeBase](https://nativebase.io/) `^2.3.3`
-- [Navigation for React Native](https://reactnavigation.org/) `^1.0.0-beta.11`
-- [Redux Modal](https://github.com/yesmeck/redux-modal) `^1.6.0`
+- [native-base](https://nativebase.io/) `2.7.2`
+- [react-native-qrcode-scanner](https://github.com/daviddang91/react-native-qrcode-scanner) `1.0.1`
+- [react-native-camera](https://github.com/react-native-community/react-native-camera) `1.1.4`
+- [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) `3.1.1`
+- [react-native-loading-spinner-overlay](https://github.com/joinspontaneous/react-native-loading-spinner-overlay) `0.5.2`
 
 ## Get Started
 
@@ -56,7 +56,7 @@ $ npm install
 
 **Method One**
 
-*	Open the project in Xcode from **ios/App.xcodeproj**.
+*	Open the project in Xcode from **ios/ReactNativeStarter.xcodeproj**.
 
 *	Hit the play button.
 
@@ -94,6 +94,14 @@ This sets up Atom to properly lint ES6+Babel+JSX using Airbnb's .eslintrc as a s
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
+
+## Data Persistence
+- [redux-persist](https://github.com/rt2zz/redux-persist) `5.10.0` persist and rehydrate a redux store
+
+
+## Debugger
+- [React Native Debugger](https://github.com/jhen0409/react-native-debugger) : The standalone app based on official debugger of React Native, and includes React Inspector / Redux DevTools
+- [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) `2.13.5`
 
 ## Rename Project
 Rename react-native app with just one command
@@ -134,3 +142,4 @@ react-native-rename "Travel App"
 ```
 react-native-rename "Travel App" -b com.junedomingo.travelapp
 ```
+
