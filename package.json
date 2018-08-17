@@ -1,50 +1,51 @@
 {
-  "name": "react-native-redux-starter-kit",
-  "version": "1.3.0",
-  "description": "Get started with React Native and Redux.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/daviddang91/react-native-redux-starter-kit"
-  },
-  "author": "David Dang <quyettien.ictu@gmail.com> (https://github.com/daviddang91)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/daviddang91/react-native-redux-starter-kit/issues"
-  },
+  "name": "ReactNativeStarter",
+  "version": "2.7.0",
   "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
-  },
-  "dependencies": {
-    "native-base": "^2.3.3",
-    "react": "^16.0.0",
-    "react-native": "^0.50.0",
-    "react-native-modalbox": "^1.4.2",
-    "react-navigation": "^1.0.0-beta.11",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.2",
-    "redux-form": "^6.8.0",
-    "redux-modal": "^1.6.0",
-    "redux-persist": "^4.8.2",
-    "redux-thunk": "^2.2.0",
-    "remote-redux-devtools": "^0.5.12"
-  },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "babel-jest": "21.2.0",
-    "babel-preset-react-native": "4.0.0",
-    "eslint": "^4.10.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
-    "eslint-plugin-react-native": "^3.1.0",
-    "jest": "21.2.1",
-    "react-test-renderer": "^16.0.0"
+    "babel-eslint": "7.2.3",
+    "eslint": "4.4.1",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-prettier": "2.1.2",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react-native": "3.0.1",
+    "husky": "0.14.3",
+    "jest": "23.3.0",
+    "prettier": "1.5.3",
+    "react-test-renderer": "16.4.1"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "color": "1.0.3",
+    "humps": "2.0.1",
+    "lodash": "4.13.1",
+    "moment": "2.22.2",
+    "native-base": "2.7.2",
+    "prop-types": "15.6.2",
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "react-native-loading-spinner-overlay": "0.5.2",
+    "react-native-modalbox": "1.6.0",
+    "react-native-splash-screen": "3.1.1",
+    "react-navigation": "2.11.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-axios-middleware": "4.0.0",
+    "redux-devtools-extension": "2.13.5",
+    "redux-form": "7.4.2",
+    "redux-modal": "2.0.3",
+    "redux-persist": "5.10.0",
+    "redux-thunk": "2.3.0"
   }
 }

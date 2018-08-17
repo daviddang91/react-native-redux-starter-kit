@@ -1,91 +1,50 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
-
-import {
-	Content,
-	Text,
-	List,
-	ListItem,
-	Icon,
-	Container,
-	Left,
-	Right,
-	Badge,
-	Button,
-	View,
-	StyleProvider,
-	getTheme,
-	variables,
-} from "native-base";
-
+import { Image, TouchableOpacity } from "react-native";
+import { Content, Text, List, ListItem, Container, View, Icon } from "native-base";
+import _ from "lodash";
 import styles from "./styles";
 
-const drawerCover = require("../../../img/drawer-cover.png");
-
-const drawerImage = require("../../../img/logo-kitchen-sink.png");
-
-const datas = [
-	{
-		name: "Home",
-		route: "Home",
-		icon: "phone-portrait",
-		bg: "#C5F442",
-	},
-  {
-    name: "ModalBox",
-    route: "ModalBox",
-    icon: "phone-portrait",
-    bg: "#00BFFF",
-    types: 5
-  },
-];
+const avatarImage = require("../../../assets/avatar.png");
 
 class SideBar extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			shadowOffsetWidth: 1,
-			shadowRadius: 4,
-		};
-	}
-
-	render() {
-		return (
-			<Container>
-				<Content bounces={false} style={styles.container}>
-					<View style={styles.drawerCover}>
-            <Image source={drawerCover} style={styles.backgroundCover} />
-            <Image square style={styles.drawerImage} source={drawerImage} />
-          </View>
-					<List
-						dataArray={datas}
-						renderRow={data =>
-							<ListItem button noBorder onPress={() => this.props.navigation.navigate(data.route)}>
-								<Left>
-									<Icon active name={data.icon} style={styles.icon} />
-									<Text style={styles.text}>
-										{data.name}
-									</Text>
-								</Left>
-								{data.types &&
-									<Right style={{ flex: 1 }}>
-										<Badge
-											style={{
-												borderRadius: 3,
-												height: 25,
-												width: 72,
-												backgroundColor: data.bg,
-											}}
-										>
-											<Text style={styles.badgeText}>{`${data.types} Types`}</Text>
-										</Badge>
-									</Right>}
-							</ListItem>}
-					/>
-				</Content>
-			</Container>
-		);
-	}
+  render() {
+    let logoutMenu = _.find(this.props.data, { route: "Logout" });
+    return (
+      <Container style={styles.container}>
+        <View style={styles.drawerCover}>
+          <Image source={avatarImage} style={styles.avatar}/>
+          <Text style={styles.organizerName}>Demo Account</Text>
+        </View>
+        <Content bounces={false}>
+          <List
+            dataArray={this.props.data}
+            renderRow={data => {
+              if (data.route === "Logout") {
+                return null;
+              } else {
+                return <ListItem style={styles.menuItem} onPress={() => this.props.onPress(data)}>
+                  <Icon
+                    active
+                    name={data.icon}
+                    style={{ color: "#777", fontSize: 26, width: 30 }}
+                  />
+                  <Text style={styles.menuText}>{data.name}</Text>
+                </ListItem>;
+              }
+            }}
+          />
+        </Content>
+        <TouchableOpacity style={styles.footer} onPress={() => this.props.onPress(logoutMenu)}>
+          <Icon
+            active
+            name={logoutMenu.icon}
+            style={{ color: "#777", fontSize: 26, width: 30 }}
+          />
+          <Text style={styles.menuText}>{logoutMenu.name}</Text>
+        </TouchableOpacity>
+      </Container>
+    );
+  }
 }
 
 export default SideBar;
