@@ -32,8 +32,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 ## Libraries
 - [native-base](https://nativebase.io/) `2.7.2`
-- [react-native-qrcode-scanner](https://github.com/daviddang91/react-native-qrcode-scanner) `1.0.1`
-- [react-native-camera](https://github.com/react-native-community/react-native-camera) `1.1.4`
+- [redux-modal](https://github.com/yesmeck/redux-modal) `2.0.3`
 - [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) `3.1.1`
 - [react-native-loading-spinner-overlay](https://github.com/joinspontaneous/react-native-loading-spinner-overlay) `0.5.2`
 
