@@ -13,6 +13,7 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "ReactNativeStarter";
     }
+
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         SplashScreen.show(this, R.style.SplashScreenTheme);
