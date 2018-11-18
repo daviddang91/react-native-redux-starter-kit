@@ -22,7 +22,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 
 ## Stack
 - [React JS](https://reactjs.org/) is a JavaScript library
-- [React Native](https://facebook.github.io/react-native/) `0.56.0` for building native apps using react
+- [React Native](https://facebook.github.io/react-native/) `0.57.0` for building native apps using react
 - [Redux](https://redux.js.org) `4.0.0` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `7.2.3` for ES6+ support
 - [NativeBase](https://nativebase.io/) `2.7.2` a UI components for React Native
