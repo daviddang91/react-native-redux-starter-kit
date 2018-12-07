@@ -6,6 +6,7 @@ import App from "./routers/App";
 import getTheme from "../native-base-theme/components";
 import material from "../native-base-theme/variables/material";
 import { StyleProvider } from "native-base";
+import { Font, AppLoading } from "expo";
 
 export default class Root extends Component {
   constructor(props) {
@@ -13,8 +14,23 @@ export default class Root extends Component {
     const { persistor, store } = configureStore();
     this.persistor = persistor;
     this.store = store;
+    this.state = { loading: true };
   }
+
+  async componentWillMount() {
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    });
+    this.setState({ loading: false });
+  }
+
   render() {
+    if (this.state.loading) {
+      return (
+        <AppLoading />
+      );
+    }
     return (
       <StyleProvider style={getTheme(material)}>
         <Provider store={this.store}>

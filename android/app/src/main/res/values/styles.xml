@@ -1,9 +1,8 @@
 <resources>
+
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowIsTranslucent">true</item>
+        <!-- Customize your theme here. -->
     </style>
-    <style name="SplashScreenTheme" parent="SplashScreen_SplashTheme">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
+
 </resources>

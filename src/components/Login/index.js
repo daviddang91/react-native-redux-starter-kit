@@ -14,7 +14,7 @@ export default class Login extends Component {
         <Spinner visible={this.props.loading}/>
         <Content>
           <Image source={logo} style={styles.logo}/>
-          <Text style={styles.textLogo}>github.com/davidang91</Text>
+          <Text style={styles.textLogo}>table tennis</Text>
           <View style={styles.containerForm}>
             <View style={styles.contentForm}>
               {this.props.loginForm}

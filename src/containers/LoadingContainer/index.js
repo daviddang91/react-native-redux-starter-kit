@@ -6,7 +6,9 @@ import { connect } from "react-redux";
 class LoadingContainer extends Component {
   componentDidMount(){
     setTimeout(() => {
-      SplashScreen.hide();
+      if (SplashScreen) {
+        SplashScreen.hide();
+      }
     }, 300);
     this.props.navigation.navigate(this.props.auth.token ? "App" : "Login");
   }

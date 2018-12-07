@@ -98,23 +98,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.daviddang91.reactnativestarter"
+        applicationId "com.tabletennisapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
-        }
-    }
-    signingConfigs {
-        release {
-            if (project.hasProperty('MANADR_STORE_FILE')) {
-                storeFile file(MANADR_STORE_FILE)
-                storePassword MANADR_STORE_PASSWORD
-                keyAlias MANADR_KEY_ALIAS
-                keyPassword MANADR_KEY_PASSWORD
-            }
         }
     }
     splits {
@@ -129,7 +119,6 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
@@ -149,7 +138,6 @@ android {
 
 dependencies {
     compile project(':react-native-vector-icons')
-    compile project(':react-native-splash-screen')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
