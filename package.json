@@ -1,6 +1,6 @@
 {
   "name": "ReactNativeStarter",
-  "version": "2.7.2.57",
+  "version": "2.7.0",
   "private": true,
   "devDependencies": {
     "@babel/runtime": "7.1.5",
