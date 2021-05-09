@@ -33,7 +33,7 @@
     "axios": "0.18.0",
     "color": "1.0.3",
     "humps": "2.0.1",
-    "lodash": "4.17.10",
+    "lodash": "4.17.21",
     "moment": "2.22.2",
     "native-base": "2.7.2",
     "prop-types": "15.6.2",
